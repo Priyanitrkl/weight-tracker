@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Weightlight</title>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <link rel="stylesheet" href="animate.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -21,18 +22,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">Home</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">About</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Features</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Team</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Testimonials</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Faq</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Food Tracker</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Macronutrient Breakup</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Track Workout</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Calorie Tracker</a> </li>
       </ul>
     </div>
   </div>
 </nav>
 <!-- End Navbar --> 
-<!-------Banner Start------->
+<!-------Home Start------->
 <section class="banner" data-scroll-index='0'>
   <div class="banner-overlay">
     <div class="container">
@@ -41,27 +40,27 @@
           <div class="banner-text">
             <h2 class="white">Enter your body weight in kg</h2>
 
-<form action="/action_page.php">
-  <label for="fname">current weight:</label><br>
-  <input type="text" id="fname" name="fname" value="65"><br>
-  <label for="lname">Target weight:</label><br>
-  <input type="text" id="lname" name="lname" value="55"><br><br>
-  <label for="lname">Daily Calorie Budget:</label><br>
-  <input type="text" id="lname" name="lname" value="1400 Cal"><br><br>
-  <button type="button" class ="btn btn-dark">Submit</button>
-</form> 
+            <div class = "b-3">
+              <input type="text" class="form-control form-control-sm " placeholder="Enter your current weight">
+              <input type="text" class="form-control form-control-sm " placeholder="Enter your target weight">
+              <input type="text" class="form-control form-control-sm " placeholder="Enter your calorie budget">
             
+  
+    <button type="button" class ="btn btn-dark">Submit</button>
+            
+            </div>
+             
           </div>
         </div>
         <div class="col-md-4 col-sm-12"> <img src="phone.jpg"width="200" height="600" class="img-fluid "/> </div>
       </div>
     </div>
   </div>
-  <span class="svg-wave"> <img class="svg-hero" src="images/applight-wave.svg"> </span> </section>
+  <span class="svg-wave"> <img class="svg-hero" src="applight-wave.svg"> </span> </section>
 
-<!-------Banner End-------> 
+<!-------Home End-------> 
 
-<!-------About End------->
+<!------- food tracker------->
 
 <section class="about section-padding prelative" data-scroll-index='1'>
   <div class="container">
@@ -173,6 +172,9 @@
                   <div class="flex-col w-[85%]">
                     <div class = "tracker">
                       <div class="text-sm font-large text-violet-600 my-2">Dinner</div>
+                      
+                      <div> <span class="fa fa-plus text-danger" aria-hidden="true"></span> </div> 
+                      <div> <span class="fa fa-camera  text-danger" aria-hidden="true"></span> </div> 
                         
                     </div>
                     
@@ -205,7 +207,7 @@
           
             
       </div>
-      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- <script src="https://cdn.tailwindcss.com"></script> -->
    
       </div>
     </div>
@@ -214,7 +216,7 @@
 <!-------About End-------> 
 
 <!-------Video Start------->
-<section class=" prelative text-center white">
+<section class=" prelative text-center white "data-scroll-index='2'>
   
   <div class="section-padding video-overlay">
     <div class="sectioner-header text-center">
@@ -323,7 +325,7 @@
 <!-------Video End-------> 
 
 <!-------Features Start------->
-<section class="feature section-padding" data-scroll-index='2'>
+<section class="feature section-padding" data-scroll-index='3'>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -459,10 +461,10 @@
                
                 <div class="flex">
         
-                <div class="flex md:flex-row flex-col p-4 space-x-4 space-y-2 max-w-7xl justify-around w-full h-auto lg:h-60 items-center ">
+                <div class="flex md:flex-row flex-col p-2 space-x-3 space-y-2 max-w-5xl justify-around w-full h-auto items-center ">
                     <div class=" w-[70%] md:w-1/2 bg-gray-200 py-10 rounded-2xl flex items-center justify-center ml-4">
                             <div class="flex-col  items-center px-0 md:px-6">
-                                <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400  bg-clip-text text-transparent">200 of 220</div>
+                                <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400  bg-clip-text text-transparent p-3">200 of 220</div>
                                   <div class="text-xs font-medium text-gray-800">calorie burnt</div>
                         </div>
                     </div>
@@ -542,11 +544,11 @@ $(window).on("scroll",function () {
 	navbar = $(".navbar");
 	
 	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/logo-black.png');
+	$('.navbar-logo img').attr('src','logo-black.png');
 	navbar.addClass("nav-scroll");
 
 }else{
-	$('.navbar-logo img').attr('src','images/logo.png');
+	$('.navbar-logo img').attr('src','logo.png');
 	navbar.removeClass("nav-scroll");
 }
 
@@ -556,10 +558,10 @@ $(window).on("load",function (){
 	navbar = $(".navbar");
 	
 	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/logo-black.png');
+	$('.navbar-logo img').attr('src','logo-black.png');
 	navbar.addClass("nav-scroll");
 	}else{
-	$('.navbar-logo img').attr('src','images/logo-white.png');
+	$('.navbar-logo img').attr('src','logo-white.png');
 	navbar.removeClass("nav-scroll");
 	}
 
